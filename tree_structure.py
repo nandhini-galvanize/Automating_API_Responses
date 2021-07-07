@@ -19,7 +19,7 @@ assets = Node("assets", parent=asset_types,url="/assets")
 events = Node("events",parent=high_bond_root,url="/events")
 
 # attribute_types is the main resource at HB
-attribute_types = Node("attribute-types",parent=high_bond_root,url="/attribute-types")
+attribute_types = Node("attribute_types",parent=high_bond_root,url="/attribute_types")
 
 # Roles is the main resource at HB
 roles = Node("roles",parent=high_bond_root,url="/roles")
@@ -38,7 +38,7 @@ asset_record_types= Node("record_types",parent=high_bond_root,url="/record_types
 
 
 #Project type is the main resource at HB
-project_type= Node("project_type",parent=high_bond_root,url="/project_type")
+project_type= Node("project_types",parent=high_bond_root,url="/project_types")
 
 #custom_attributes is the child resource of project
 custom_attributes= Node("custom_attributes", parent=project_type, url='/custom_attributes')
