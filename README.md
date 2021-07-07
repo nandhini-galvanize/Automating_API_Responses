@@ -16,21 +16,25 @@ This project has the following requirements:
 Build a python script to read the resources list and create the excel tabs based on the API responses for each of the resources in the list
 
 ### The list of resources given as part of the intial level discussion with John and Jared:
-'collections',
-'events',
-'workflows',
-'handlers',
-'roles',
-'role_permission_assignments',
-'analysis',
-'attribute_types',
-'workflow_status',
-'asset_types',
-'project_types',
-'custom_attributes',
-'workflow_status_events',
-'questionnaires',
-'tables',
+'collections'
+
+'events'
+
+'workflows'
+
+'handlers'
+
+'roles'
+'role_permission_assignments'
+'analysis'
+'attribute_types'
+'workflow_status'
+'asset_types'
+'project_types'
+'custom_attributes'
+'workflow_status_events'
+'questionnaires'
+'tables'
 'asset_record_types'
 
 ### Input:
