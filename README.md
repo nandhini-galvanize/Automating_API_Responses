@@ -1,11 +1,11 @@
 # README
-### Author: R.Nandhini
-## TableofContents
-# Title of the project
-# Background
-# Tech stack
-# Set up
-# Summary
+## Author: R.Nandhini
+# Table of Contents
+## Title of the project
+### Background
+### Tech stack
+### Set up
+### Summary
 
 ## Title of the project
 Windstream special project
@@ -14,8 +14,9 @@ Windstream special project
 This project has the following requirements:
 
 Build a python script to read the resources list and create the excel tabs based on the API responses for each of the resources in the list
+
 ### The list of resources given as part of the intial level discussion with John and Jared:
- 'collections',
+'collections',
 'events',
 'workflows',
 'handlers',
@@ -32,13 +33,16 @@ Build a python script to read the resources list and create the excel tabs based
 'tables',
 'asset_record_types'
 
-### input:
+### Input:
 API access credentials such as access token, Org_id, base url
+
 API responses from org level resources and also from its nested resources
-### output:
+
+### Output:
 Excel sheet which contain all the resources as tab names and its responses as fields names
 
 The python script has been developed completely based on Highbond API documentation.The relationship between the resources are been cross checked with API documentation and created the treestructure based on the API documentation.
+
 https://docs-apis.highbond-s1.com/public.html
 
 ### Pros:
@@ -56,12 +60,14 @@ https://docs-apis.highbond-s1.com/public.html
 Note: Edge cases has to be given as "special outliers  cases" as part of the requirements. 
 
 ### Time taken:
+
  4 working days
+
 ### Tech-stack
 
-Python
-windows
-Refer requirements.txt for details
+1. Python
+2. windows
+3. Refer requirements.txt for details
 
 
 ## setup
