@@ -1,6 +1,6 @@
 # README
 ## Author: R.Nandhini
-# Table of Contents
+## Table of Contents
 ## Title of the project
 ### Background
 ### Tech stack
@@ -25,16 +25,27 @@ Build a python script to read the resources list and create the excel tabs based
 'handlers'
 
 'roles'
+
 'role_permission_assignments'
+
 'analysis'
+
 'attribute_types'
+
 'workflow_status'
+
 'asset_types'
+
 'project_types'
+
 'custom_attributes'
+
 'workflow_status_events'
+
 'questionnaires'
+
 'tables'
+
 'asset_record_types'
 
 ### Input:
@@ -49,13 +60,20 @@ The python script has been developed completely based on Highbond API documentat
 
 https://docs-apis.highbond-s1.com/public.html
 
+### Software design behind this approach:
+
+In order to understand the API responses, we need to understand the hierarchical structure of the resources from the org level up until leaf node level. I found "any tree" package from python which would be appropriate for this particular use-case to traverse back and forth to gain the dependencies between the resources. I have created the tree structure of the resources as a first step to understand the flow between the resources and cross verified with API documentation about the nested structure of the resources. As a second step, I have imported this tree into the main python program to traverse from root(High bond) to nested resources. I have used this traversal to form the parent URL for making API endpoint as well as child URL. I loop through all the parent resources until it reaches the last node(leaf node) in its tree structure. Once it hit the leaf node, it traverses back to the parent node and continues the same for the rest of the resources.
+
+
 ### Pros:
 
-1. Resources dependencies can be Completely configurable by tree structure based on the use cases
+1. Resources dependencies can be completely configurable by tree structure based on the use cases
 
-2. Works well for the forst level requirements given to me
+2. Works well for the first level requirements given to me
 
-3. This is basic version can be improved as and when the requirements are changing 
+3. This is basic version. Further edge cases can be improved as and when the requirements are changing 
+
+4. Completely modular
 
 ### Cons:
 
@@ -78,7 +96,7 @@ Note: Edge cases has to be given as "special outliers  cases" as part of the req
 Run the requirenets.txt to set up the dependencies in your local machine
 
 ### Summary: 
-This version of code blocks works well with intial requirements given to me on June 29,2021. It takes 2 working days to fix the api call  bugs. After the intial first level meeting with John, few bugs were noted down. The next version fixes all bugs and cross checked with APi responses and captured those responses as rows and columns in excel sheet.
+This version of code blocks works well with intial requirements given to me on June 29,2021. It takes 2 working days to fix the api endpoints bugs from API team. After the intial first level meeting with John on July 6th, few bugs were noted down. The next version fixes all bugs and cross checked with APi responses and captured those responses as rows and columns in excel sheet.
 
 
 
