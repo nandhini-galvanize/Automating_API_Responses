@@ -1,7 +1,9 @@
-# README
+
 ## Author: R.Nandhini
+## Product Owner: John Fitch, Jared
+## Reviewers: John Fitch, Diana Hidalgo
 ## Table of Contents
-## Title of the project
+### Title of the project
 ### Background
 ### Tech stack
 ### Set up
